@@ -349,6 +349,7 @@
                           delay:0
                         options:UIViewAnimationOptionAllowUserInteraction
                      animations:^{
+                         cell.contentView.backgroundColor = [UIColor lightGrayColor];
                          cell.contentView.layer.shadowOpacity = 0.7;
                      }
                      completion:nil
@@ -361,6 +362,7 @@
                           delay:0
                         options:UIViewAnimationOptionAllowUserInteraction
                      animations:^{
+                         cell.contentView.backgroundColor = [UIColor clearColor];
                          cell.contentView.layer.shadowOpacity = 0;
                      }
                      completion:nil
