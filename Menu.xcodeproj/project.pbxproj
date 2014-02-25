@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C084E7F818BB7E7700F63E11 /* PooViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C084E7F718BB7E7700F63E11 /* PooViewViewController.m */; };
+		CC65315F18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CC65315E18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.m */; };
+		CCB74F7318BAEC7B0051C324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F7218BAEC7B0051C324 /* Foundation.framework */; };
+		CCB74F7518BAEC7B0051C324 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F7418BAEC7B0051C324 /* CoreGraphics.framework */; };
+		CCB74F7718BAEC7B0051C324 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F7618BAEC7B0051C324 /* UIKit.framework */; };
+		CCB74F7D18BAEC7B0051C324 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCB74F7B18BAEC7B0051C324 /* InfoPlist.strings */; };
+		CCB74F7F18BAEC7B0051C324 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74F7E18BAEC7B0051C324 /* main.m */; };
+		CCB74F8318BAEC7B0051C324 /* PooAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74F8218BAEC7B0051C324 /* PooAppDelegate.m */; };
+		CCB74F8618BAEC7B0051C324 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCB74F8418BAEC7B0051C324 /* Main.storyboard */; };
+		CCB74F8918BAEC7B0051C324 /* PooViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74F8818BAEC7B0051C324 /* PooViewController.m */; };
+		CCB74F8B18BAEC7B0051C324 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCB74F8A18BAEC7B0051C324 /* Images.xcassets */; };
+		CCB74F9218BAEC7B0051C324 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F9118BAEC7B0051C324 /* XCTest.framework */; };
+		CCB74F9318BAEC7B0051C324 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F7218BAEC7B0051C324 /* Foundation.framework */; };
+		CCB74F9418BAEC7B0051C324 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74F7618BAEC7B0051C324 /* UIKit.framework */; };
+		CCB74F9C18BAEC7B0051C324 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CCB74F9A18BAEC7B0051C324 /* InfoPlist.strings */; };
+		CCB74F9E18BAEC7B0051C324 /* MenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74F9D18BAEC7B0051C324 /* MenuTests.m */; };
+		CCB74FB418BAECC10051C324 /* GMGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FAA18BAECC10051C324 /* GMGridView.m */; };
+		CCB74FB518BAECC10051C324 /* GMGridViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FAC18BAECC10051C324 /* GMGridViewCell.m */; };
+		CCB74FB618BAECC10051C324 /* GMGridViewLayoutStrategies.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FAF18BAECC10051C324 /* GMGridViewLayoutStrategies.m */; };
+		CCB74FB718BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FB118BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.m */; };
+		CCB74FB818BAECC10051C324 /* UIView+GMGridViewAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FB318BAECC10051C324 /* UIView+GMGridViewAdditions.m */; };
+		CCB74FBA18BAECEA0051C324 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCB74FB918BAECEA0051C324 /* Accelerate.framework */; };
+		CCB74FC418BAED0D0051C324 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FBC18BAED0D0051C324 /* Default-568h@2x.png */; };
+		CCB74FC518BAED0D0051C324 /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FBD18BAED0D0051C324 /* burger.png */; };
+		CCB74FC618BAED0D0051C324 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FBE18BAED0D0051C324 /* gear.png */; };
+		CCB74FC718BAED0D0051C324 /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FBF18BAED0D0051C324 /* globe.png */; };
+		CCB74FC818BAED0D0051C324 /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FC018BAED0D0051C324 /* profile.png */; };
+		CCB74FC918BAED0D0051C324 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FC118BAED0D0051C324 /* star.png */; };
+		CCB74FCA18BAED0D0051C324 /* RNFrostedSidebar.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FC318BAED0D0051C324 /* RNFrostedSidebar.m */; };
+		CCB74FDE18BAEE510051C324 /* favorite_add.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FCE18BAEE510051C324 /* favorite_add.png */; };
+		CCB74FDF18BAEE510051C324 /* 分析中心.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FCF18BAEE510051C324 /* 分析中心.png */; };
+		CCB74FE018BAEE510051C324 /* 国债计算器.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD018BAEE510051C324 /* 国债计算器.png */; };
+		CCB74FE118BAEE510051C324 /* 合买大厅.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD118BAEE510051C324 /* 合买大厅.png */; };
+		CCB74FE218BAEE510051C324 /* 基金净值.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD218BAEE510051C324 /* 基金净值.png */; };
+		CCB74FE318BAEE510051C324 /* 基金资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD318BAEE510051C324 /* 基金资讯.png */; };
+		CCB74FE418BAEE510051C324 /* 卡片管理.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD418BAEE510051C324 /* 卡片管理.png */; };
+		CCB74FE518BAEE510051C324 /* 其他缴费.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD518BAEE510051C324 /* 其他缴费.png */; };
+		CCB74FE618BAEE510051C324 /* 商户查询.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD618BAEE510051C324 /* 商户查询.png */; };
+		CCB74FE718BAEE510051C324 /* 商旅预订.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD718BAEE510051C324 /* 商旅预订.png */; };
+		CCB74FE818BAEE510051C324 /* 售汇.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD818BAEE510051C324 /* 售汇.png */; };
+		CCB74FE918BAEE510051C324 /* 外汇管理.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FD918BAEE510051C324 /* 外汇管理.png */; };
+		CCB74FEA18BAEE510051C324 /* 外汇汇率.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FDA18BAEE510051C324 /* 外汇汇率.png */; };
+		CCB74FEB18BAEE510051C324 /* 外汇计算器.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FDB18BAEE510051C324 /* 外汇计算器.png */; };
+		CCB74FEC18BAEE510051C324 /* 外汇资讯.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FDC18BAEE510051C324 /* 外汇资讯.png */; };
+		CCB74FED18BAEE510051C324 /* close_x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCB74FDD18BAEE510051C324 /* close_x.png */; };
+		CCB74FF018BAF3960051C324 /* PooAddToMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB74FEF18BAF3960051C324 /* PooAddToMenuViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCB74F9518BAEC7B0051C324 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCB74F6718BAEC7A0051C324 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCB74F6E18BAEC7A0051C324;
+			remoteInfo = Menu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C084E7F618BB7E7700F63E11 /* PooViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooViewViewController.h; sourceTree = "<group>"; };
+		C084E7F718BB7E7700F63E11 /* PooViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooViewViewController.m; sourceTree = "<group>"; };
+		CC65315D18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooAddToMenuTableViewCell.h; sourceTree = "<group>"; };
+		CC65315E18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooAddToMenuTableViewCell.m; sourceTree = "<group>"; };
+		CCB74F6F18BAEC7B0051C324 /* Menu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menu.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB74F7218BAEC7B0051C324 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CCB74F7418BAEC7B0051C324 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CCB74F7618BAEC7B0051C324 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CCB74F7A18BAEC7B0051C324 /* Menu-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Menu-Info.plist"; sourceTree = "<group>"; };
+		CCB74F7C18BAEC7B0051C324 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCB74F7E18BAEC7B0051C324 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CCB74F8018BAEC7B0051C324 /* Menu-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menu-Prefix.pch"; sourceTree = "<group>"; };
+		CCB74F8118BAEC7B0051C324 /* PooAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PooAppDelegate.h; sourceTree = "<group>"; };
+		CCB74F8218BAEC7B0051C324 /* PooAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PooAppDelegate.m; sourceTree = "<group>"; };
+		CCB74F8518BAEC7B0051C324 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCB74F8718BAEC7B0051C324 /* PooViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PooViewController.h; sourceTree = "<group>"; };
+		CCB74F8818BAEC7B0051C324 /* PooViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PooViewController.m; sourceTree = "<group>"; };
+		CCB74F8A18BAEC7B0051C324 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CCB74F9018BAEC7B0051C324 /* MenuTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MenuTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCB74F9118BAEC7B0051C324 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CCB74F9918BAEC7B0051C324 /* MenuTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MenuTests-Info.plist"; sourceTree = "<group>"; };
+		CCB74F9B18BAEC7B0051C324 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CCB74F9D18BAEC7B0051C324 /* MenuTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuTests.m; sourceTree = "<group>"; };
+		CCB74FA818BAECC10051C324 /* GMGridView-Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridView-Constants.h"; sourceTree = "<group>"; };
+		CCB74FA918BAECC10051C324 /* GMGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridView.h; sourceTree = "<group>"; };
+		CCB74FAA18BAECC10051C324 /* GMGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridView.m; sourceTree = "<group>"; };
+		CCB74FAB18BAECC10051C324 /* GMGridViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewCell.h; sourceTree = "<group>"; };
+		CCB74FAC18BAECC10051C324 /* GMGridViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewCell.m; sourceTree = "<group>"; };
+		CCB74FAD18BAECC10051C324 /* GMGridViewCell+Extended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GMGridViewCell+Extended.h"; sourceTree = "<group>"; };
+		CCB74FAE18BAECC10051C324 /* GMGridViewLayoutStrategies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMGridViewLayoutStrategies.h; sourceTree = "<group>"; };
+		CCB74FAF18BAECC10051C324 /* GMGridViewLayoutStrategies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMGridViewLayoutStrategies.m; sourceTree = "<group>"; };
+		CCB74FB018BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		CCB74FB118BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		CCB74FB218BAECC10051C324 /* UIView+GMGridViewAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GMGridViewAdditions.h"; sourceTree = "<group>"; };
+		CCB74FB318BAECC10051C324 /* UIView+GMGridViewAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GMGridViewAdditions.m"; sourceTree = "<group>"; };
+		CCB74FB918BAECEA0051C324 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		CCB74FBC18BAED0D0051C324 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CCB74FBD18BAED0D0051C324 /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		CCB74FBE18BAED0D0051C324 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		CCB74FBF18BAED0D0051C324 /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		CCB74FC018BAED0D0051C324 /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		CCB74FC118BAED0D0051C324 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		CCB74FC218BAED0D0051C324 /* RNFrostedSidebar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNFrostedSidebar.h; sourceTree = "<group>"; };
+		CCB74FC318BAED0D0051C324 /* RNFrostedSidebar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNFrostedSidebar.m; sourceTree = "<group>"; };
+		CCB74FCE18BAEE510051C324 /* favorite_add.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = favorite_add.png; sourceTree = "<group>"; };
+		CCB74FCF18BAEE510051C324 /* 分析中心.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "分析中心.png"; sourceTree = "<group>"; };
+		CCB74FD018BAEE510051C324 /* 国债计算器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "国债计算器.png"; sourceTree = "<group>"; };
+		CCB74FD118BAEE510051C324 /* 合买大厅.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "合买大厅.png"; sourceTree = "<group>"; };
+		CCB74FD218BAEE510051C324 /* 基金净值.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "基金净值.png"; sourceTree = "<group>"; };
+		CCB74FD318BAEE510051C324 /* 基金资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "基金资讯.png"; sourceTree = "<group>"; };
+		CCB74FD418BAEE510051C324 /* 卡片管理.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "卡片管理.png"; sourceTree = "<group>"; };
+		CCB74FD518BAEE510051C324 /* 其他缴费.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "其他缴费.png"; sourceTree = "<group>"; };
+		CCB74FD618BAEE510051C324 /* 商户查询.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商户查询.png"; sourceTree = "<group>"; };
+		CCB74FD718BAEE510051C324 /* 商旅预订.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "商旅预订.png"; sourceTree = "<group>"; };
+		CCB74FD818BAEE510051C324 /* 售汇.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "售汇.png"; sourceTree = "<group>"; };
+		CCB74FD918BAEE510051C324 /* 外汇管理.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外汇管理.png"; sourceTree = "<group>"; };
+		CCB74FDA18BAEE510051C324 /* 外汇汇率.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外汇汇率.png"; sourceTree = "<group>"; };
+		CCB74FDB18BAEE510051C324 /* 外汇计算器.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外汇计算器.png"; sourceTree = "<group>"; };
+		CCB74FDC18BAEE510051C324 /* 外汇资讯.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "外汇资讯.png"; sourceTree = "<group>"; };
+		CCB74FDD18BAEE510051C324 /* close_x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close_x.png; sourceTree = "<group>"; };
+		CCB74FEE18BAF3960051C324 /* PooAddToMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PooAddToMenuViewController.h; sourceTree = "<group>"; };
+		CCB74FEF18BAF3960051C324 /* PooAddToMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PooAddToMenuViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCB74F6C18BAEC7A0051C324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74FBA18BAECEA0051C324 /* Accelerate.framework in Frameworks */,
+				CCB74F7518BAEC7B0051C324 /* CoreGraphics.framework in Frameworks */,
+				CCB74F7718BAEC7B0051C324 /* UIKit.framework in Frameworks */,
+				CCB74F7318BAEC7B0051C324 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB74F8D18BAEC7B0051C324 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74F9218BAEC7B0051C324 /* XCTest.framework in Frameworks */,
+				CCB74F9418BAEC7B0051C324 /* UIKit.framework in Frameworks */,
+				CCB74F9318BAEC7B0051C324 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C084E7F518BB7E2100F63E11 /* 选择要加入项目的table */ = {
+			isa = PBXGroup;
+			children = (
+				CC65315D18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.h */,
+				CC65315E18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.m */,
+				CCB74FEE18BAF3960051C324 /* PooAddToMenuViewController.h */,
+				CCB74FEF18BAF3960051C324 /* PooAddToMenuViewController.m */,
+			);
+			name = "选择要加入项目的table";
+			sourceTree = "<group>";
+		};
+		CCB74F6618BAEC7A0051C324 = {
+			isa = PBXGroup;
+			children = (
+				C084E7F618BB7E7700F63E11 /* PooViewViewController.h */,
+				C084E7F718BB7E7700F63E11 /* PooViewViewController.m */,
+				C084E7F518BB7E2100F63E11 /* 选择要加入项目的table */,
+				CCB74FCD18BAEE3E0051C324 /* 介面圖片 */,
+				CCB74FBB18BAED000051C324 /* 側邊欄 */,
+				CCB74FA718BAECA40051C324 /* Menu-lib */,
+				CCB74F7818BAEC7B0051C324 /* Menu */,
+				CCB74F9718BAEC7B0051C324 /* MenuTests */,
+				CCB74F7118BAEC7B0051C324 /* Frameworks */,
+				CCB74F7018BAEC7B0051C324 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CCB74F7018BAEC7B0051C324 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74F6F18BAEC7B0051C324 /* Menu.app */,
+				CCB74F9018BAEC7B0051C324 /* MenuTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCB74F7118BAEC7B0051C324 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74FB918BAECEA0051C324 /* Accelerate.framework */,
+				CCB74F7218BAEC7B0051C324 /* Foundation.framework */,
+				CCB74F7418BAEC7B0051C324 /* CoreGraphics.framework */,
+				CCB74F7618BAEC7B0051C324 /* UIKit.framework */,
+				CCB74F9118BAEC7B0051C324 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCB74F7818BAEC7B0051C324 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74F8118BAEC7B0051C324 /* PooAppDelegate.h */,
+				CCB74F8218BAEC7B0051C324 /* PooAppDelegate.m */,
+				CCB74F8418BAEC7B0051C324 /* Main.storyboard */,
+				CCB74F8718BAEC7B0051C324 /* PooViewController.h */,
+				CCB74F8818BAEC7B0051C324 /* PooViewController.m */,
+				CCB74F8A18BAEC7B0051C324 /* Images.xcassets */,
+				CCB74F7918BAEC7B0051C324 /* Supporting Files */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		CCB74F7918BAEC7B0051C324 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74F7A18BAEC7B0051C324 /* Menu-Info.plist */,
+				CCB74F7B18BAEC7B0051C324 /* InfoPlist.strings */,
+				CCB74F7E18BAEC7B0051C324 /* main.m */,
+				CCB74F8018BAEC7B0051C324 /* Menu-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCB74F9718BAEC7B0051C324 /* MenuTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74F9D18BAEC7B0051C324 /* MenuTests.m */,
+				CCB74F9818BAEC7B0051C324 /* Supporting Files */,
+			);
+			path = MenuTests;
+			sourceTree = "<group>";
+		};
+		CCB74F9818BAEC7B0051C324 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74F9918BAEC7B0051C324 /* MenuTests-Info.plist */,
+				CCB74F9A18BAEC7B0051C324 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CCB74FA718BAECA40051C324 /* Menu-lib */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74FA818BAECC10051C324 /* GMGridView-Constants.h */,
+				CCB74FA918BAECC10051C324 /* GMGridView.h */,
+				CCB74FAA18BAECC10051C324 /* GMGridView.m */,
+				CCB74FAB18BAECC10051C324 /* GMGridViewCell.h */,
+				CCB74FAC18BAECC10051C324 /* GMGridViewCell.m */,
+				CCB74FAD18BAECC10051C324 /* GMGridViewCell+Extended.h */,
+				CCB74FAE18BAECC10051C324 /* GMGridViewLayoutStrategies.h */,
+				CCB74FAF18BAECC10051C324 /* GMGridViewLayoutStrategies.m */,
+				CCB74FB018BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.h */,
+				CCB74FB118BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.m */,
+				CCB74FB218BAECC10051C324 /* UIView+GMGridViewAdditions.h */,
+				CCB74FB318BAECC10051C324 /* UIView+GMGridViewAdditions.m */,
+			);
+			name = "Menu-lib";
+			sourceTree = "<group>";
+		};
+		CCB74FBB18BAED000051C324 /* 側邊欄 */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74FBC18BAED0D0051C324 /* Default-568h@2x.png */,
+				CCB74FBD18BAED0D0051C324 /* burger.png */,
+				CCB74FBE18BAED0D0051C324 /* gear.png */,
+				CCB74FBF18BAED0D0051C324 /* globe.png */,
+				CCB74FC018BAED0D0051C324 /* profile.png */,
+				CCB74FC118BAED0D0051C324 /* star.png */,
+				CCB74FC218BAED0D0051C324 /* RNFrostedSidebar.h */,
+				CCB74FC318BAED0D0051C324 /* RNFrostedSidebar.m */,
+			);
+			name = "側邊欄";
+			sourceTree = "<group>";
+		};
+		CCB74FCD18BAEE3E0051C324 /* 介面圖片 */ = {
+			isa = PBXGroup;
+			children = (
+				CCB74FCE18BAEE510051C324 /* favorite_add.png */,
+				CCB74FCF18BAEE510051C324 /* 分析中心.png */,
+				CCB74FD018BAEE510051C324 /* 国债计算器.png */,
+				CCB74FD118BAEE510051C324 /* 合买大厅.png */,
+				CCB74FD218BAEE510051C324 /* 基金净值.png */,
+				CCB74FD318BAEE510051C324 /* 基金资讯.png */,
+				CCB74FD418BAEE510051C324 /* 卡片管理.png */,
+				CCB74FD518BAEE510051C324 /* 其他缴费.png */,
+				CCB74FD618BAEE510051C324 /* 商户查询.png */,
+				CCB74FD718BAEE510051C324 /* 商旅预订.png */,
+				CCB74FD818BAEE510051C324 /* 售汇.png */,
+				CCB74FD918BAEE510051C324 /* 外汇管理.png */,
+				CCB74FDA18BAEE510051C324 /* 外汇汇率.png */,
+				CCB74FDB18BAEE510051C324 /* 外汇计算器.png */,
+				CCB74FDC18BAEE510051C324 /* 外汇资讯.png */,
+				CCB74FDD18BAEE510051C324 /* close_x.png */,
+			);
+			name = "介面圖片";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCB74F6E18BAEC7A0051C324 /* Menu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB74FA118BAEC7B0051C324 /* Build configuration list for PBXNativeTarget "Menu" */;
+			buildPhases = (
+				CCB74F6B18BAEC7A0051C324 /* Sources */,
+				CCB74F6C18BAEC7A0051C324 /* Frameworks */,
+				CCB74F6D18BAEC7A0051C324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Menu;
+			productName = Menu;
+			productReference = CCB74F6F18BAEC7B0051C324 /* Menu.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCB74F8F18BAEC7B0051C324 /* MenuTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCB74FA418BAEC7B0051C324 /* Build configuration list for PBXNativeTarget "MenuTests" */;
+			buildPhases = (
+				CCB74F8C18BAEC7B0051C324 /* Sources */,
+				CCB74F8D18BAEC7B0051C324 /* Frameworks */,
+				CCB74F8E18BAEC7B0051C324 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCB74F9618BAEC7B0051C324 /* PBXTargetDependency */,
+			);
+			name = MenuTests;
+			productName = MenuTests;
+			productReference = CCB74F9018BAEC7B0051C324 /* MenuTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCB74F6718BAEC7A0051C324 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Poo;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = crazypoo;
+				TargetAttributes = {
+					CCB74F8F18BAEC7B0051C324 = {
+						TestTargetID = CCB74F6E18BAEC7A0051C324;
+					};
+				};
+			};
+			buildConfigurationList = CCB74F6A18BAEC7A0051C324 /* Build configuration list for PBXProject "Menu" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCB74F6618BAEC7A0051C324;
+			productRefGroup = CCB74F7018BAEC7B0051C324 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCB74F6E18BAEC7A0051C324 /* Menu */,
+				CCB74F8F18BAEC7B0051C324 /* MenuTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCB74F6D18BAEC7A0051C324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74F8B18BAEC7B0051C324 /* Images.xcassets in Resources */,
+				CCB74FDE18BAEE510051C324 /* favorite_add.png in Resources */,
+				CCB74FC718BAED0D0051C324 /* globe.png in Resources */,
+				CCB74FC918BAED0D0051C324 /* star.png in Resources */,
+				CCB74FE218BAEE510051C324 /* 基金净值.png in Resources */,
+				CCB74FDF18BAEE510051C324 /* 分析中心.png in Resources */,
+				CCB74FED18BAEE510051C324 /* close_x.png in Resources */,
+				CCB74FC518BAED0D0051C324 /* burger.png in Resources */,
+				CCB74FC618BAED0D0051C324 /* gear.png in Resources */,
+				CCB74FE918BAEE510051C324 /* 外汇管理.png in Resources */,
+				CCB74FE118BAEE510051C324 /* 合买大厅.png in Resources */,
+				CCB74FC418BAED0D0051C324 /* Default-568h@2x.png in Resources */,
+				CCB74FEC18BAEE510051C324 /* 外汇资讯.png in Resources */,
+				CCB74FEB18BAEE510051C324 /* 外汇计算器.png in Resources */,
+				CCB74FE818BAEE510051C324 /* 售汇.png in Resources */,
+				CCB74FE418BAEE510051C324 /* 卡片管理.png in Resources */,
+				CCB74FE518BAEE510051C324 /* 其他缴费.png in Resources */,
+				CCB74F7D18BAEC7B0051C324 /* InfoPlist.strings in Resources */,
+				CCB74FE618BAEE510051C324 /* 商户查询.png in Resources */,
+				CCB74FEA18BAEE510051C324 /* 外汇汇率.png in Resources */,
+				CCB74FE718BAEE510051C324 /* 商旅预订.png in Resources */,
+				CCB74FE318BAEE510051C324 /* 基金资讯.png in Resources */,
+				CCB74F8618BAEC7B0051C324 /* Main.storyboard in Resources */,
+				CCB74FC818BAED0D0051C324 /* profile.png in Resources */,
+				CCB74FE018BAEE510051C324 /* 国债计算器.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB74F8E18BAEC7B0051C324 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74F9C18BAEC7B0051C324 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCB74F6B18BAEC7A0051C324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74FB418BAECC10051C324 /* GMGridView.m in Sources */,
+				CC65315F18BB3BD400CE37F3 /* PooAddToMenuTableViewCell.m in Sources */,
+				C084E7F818BB7E7700F63E11 /* PooViewViewController.m in Sources */,
+				CCB74F7F18BAEC7B0051C324 /* main.m in Sources */,
+				CCB74F8318BAEC7B0051C324 /* PooAppDelegate.m in Sources */,
+				CCB74FB618BAECC10051C324 /* GMGridViewLayoutStrategies.m in Sources */,
+				CCB74F8918BAEC7B0051C324 /* PooViewController.m in Sources */,
+				CCB74FF018BAF3960051C324 /* PooAddToMenuViewController.m in Sources */,
+				CCB74FB718BAECC10051C324 /* UIGestureRecognizer+GMGridViewAdditions.m in Sources */,
+				CCB74FB518BAECC10051C324 /* GMGridViewCell.m in Sources */,
+				CCB74FB818BAECC10051C324 /* UIView+GMGridViewAdditions.m in Sources */,
+				CCB74FCA18BAED0D0051C324 /* RNFrostedSidebar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCB74F8C18BAEC7B0051C324 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCB74F9E18BAEC7B0051C324 /* MenuTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCB74F9618BAEC7B0051C324 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCB74F6E18BAEC7A0051C324 /* Menu */;
+			targetProxy = CCB74F9518BAEC7B0051C324 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCB74F7B18BAEC7B0051C324 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB74F7C18BAEC7B0051C324 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CCB74F8418BAEC7B0051C324 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB74F8518BAEC7B0051C324 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCB74F9A18BAEC7B0051C324 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCB74F9B18BAEC7B0051C324 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCB74F9F18BAEC7B0051C324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CCB74FA018BAEC7B0051C324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCB74FA218BAEC7B0051C324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Menu/Menu-Prefix.pch";
+				INFOPLIST_FILE = "Menu/Menu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CCB74FA318BAEC7B0051C324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: JIEHAO DENG (RYR2KG82CG)";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Menu/Menu-Prefix.pch";
+				INFOPLIST_FILE = "Menu/Menu-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CCB74FA518BAEC7B0051C324 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Menu.app/Menu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Menu/Menu-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MenuTests/MenuTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		CCB74FA618BAEC7B0051C324 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Menu.app/Menu";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Menu/Menu-Prefix.pch";
+				INFOPLIST_FILE = "MenuTests/MenuTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCB74F6A18BAEC7A0051C324 /* Build configuration list for PBXProject "Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB74F9F18BAEC7B0051C324 /* Debug */,
+				CCB74FA018BAEC7B0051C324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB74FA118BAEC7B0051C324 /* Build configuration list for PBXNativeTarget "Menu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB74FA218BAEC7B0051C324 /* Debug */,
+				CCB74FA318BAEC7B0051C324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCB74FA418BAEC7B0051C324 /* Build configuration list for PBXNativeTarget "MenuTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCB74FA518BAEC7B0051C324 /* Debug */,
+				CCB74FA618BAEC7B0051C324 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCB74F6718BAEC7A0051C324 /* Project object */;
+}
