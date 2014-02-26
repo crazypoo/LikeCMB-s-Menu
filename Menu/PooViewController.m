@@ -113,9 +113,7 @@
     
     _gmGridView = [[GMGridView alloc] initWithFrame:self.view.bounds];
     _gmGridView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-    _gmGridView.backgroundColor = [UIColor clearColor];
-//    _gmGridView = gmGridView;
-    
+    _gmGridView.backgroundColor = [UIColor clearColor];    
     _gmGridView.style = GMGridViewStyleSwap;
     _gmGridView.itemSpacing = spacing;
     _gmGridView.minEdgeInsets = UIEdgeInsetsMake(spacing, spacing, spacing, spacing);
@@ -328,9 +326,9 @@
 {
     if (buttonIndex == 1)
     {
-        NSString *lol = [NSString stringWithFormat:@"%@",[_currentData[_lastDeleteItemIndexAsked] objectForKey:@"text"]];
+        NSString *name = [NSString stringWithFormat:@"%@",[_currentData[_lastDeleteItemIndexAsked] objectForKey:@"text"]];
         NSString *photoName = [NSString stringWithFormat:@"%@",[_currentData[_lastDeleteItemIndexAsked] objectForKey:@"png"]];
-        NSDictionary *data = @{@"png":photoName,@"text":lol};
+        NSDictionary *data = @{@"png":photoName,@"text":name};
         [_currentData removeObjectAtIndex:_lastDeleteItemIndexAsked];
         [_gmGridView removeObjectAtIndex:_lastDeleteItemIndexAsked withAnimation:GMGridViewItemAnimationFade];
         [self.AfterCurrentData addObject:data];
